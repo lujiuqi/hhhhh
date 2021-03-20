@@ -1,0 +1,232 @@
+@charset 'utf-8';
+.center {
+  background-color: #333;
+}
+.centertop {
+  width: 1200px;
+  height: 50px;
+  font: 20px/50px "宋体";
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+.centertop span {
+  display: inline-block;
+  padding: 0 15px;
+}
+.centertop span:nth-child(1) {
+  float: left;
+}
+.centertop span:nth-child(2) {
+  float: right;
+}
+.centertop span:nth-child(2) i {
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  font: 16px/30px "宋体";
+  margin-right: 3px;
+  color: orangered ;
+  border: 1px solid orangered;
+}
+.centertop a {
+  font-size: 16px;
+  color: white;
+}
+.videobox {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #333;
+}
+.videobox #video {
+  width: 840px;
+  height: 475px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.videobox #video video {
+  width: 100%;
+}
+.videobox #video #contrl {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  vertical-align: middle;
+  background-color: #0dd;
+  left: 0;
+  bottom: 0px;
+  color: #fff;
+  display: flex;
+  transition: all 0.3s;
+}
+.videobox #video #contrl a {
+  font-size: 24px;
+}
+.videobox #video #contrl a,
+.videobox #video #contrl span {
+  margin: 0 6px;
+  line-height: 30px;
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+}
+.videobox #video #contrl #progress {
+  flex: 1;
+  height: 10px;
+  margin-top: 10px;
+  border-radius: 15px;
+  background-color: #ccc;
+  overflow: hidden;
+}
+.videobox #video #contrl #progress div {
+  height: 10px;
+  background-color: #032;
+}
+.catalogue {
+  float: right;
+  width: 340px;
+  height: 475px;
+  margin-top: 0;
+}
+.catalogue h4 {
+  width: 100%;
+  height: 30px;
+  text-indent: 15px;
+  background-color: #045;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+}
+.catalogue .contentlist {
+  width: 340px;
+  height: 445px;
+  position: relative;
+  border-left: 1px solid #fff;
+  overflow: hidden;
+}
+.catalogue .contentlist ul {
+  width: 310px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.catalogue .contentlist li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  line-height: 28px;
+  cursor: pointer;
+}
+.catalogue .contentlist .scrollbar {
+  width: 30px;
+  height: 445px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #999;
+}
+.catalogue .contentlist .scrollbar a {
+  display: block;
+  color: #000;
+  width: 30px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 20px ;
+  background-color: #fff;
+  text-align: center;
+}
+.catalogue .contentlist .scrollbar #bar {
+  width: 30px;
+  height: 405px;
+  position: relative;
+}
+.catalogue .contentlist .scrollbar #bar #slider {
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  background-color: #0da;
+  border-radius: 15px;
+}
+.related {
+  height: 600px;
+  margin: 50px auto 100px;
+}
+.related h4 {
+  width: 1040px;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.related #rlist {
+  width: 1040px;
+  height: 505px;
+  margin-left: 40px;
+  float: left;
+}
+.related #rlist li {
+  float: left;
+  width: 260px;
+  margin-bottom: 80px;
+}
+.related #rlist li img {
+  width: 230px;
+  height: 130px;
+}
+.related #rlist li p {
+  margin-bottom: 5px;
+  text-align: center;
+  font: 18px/15px "宋体";
+}
+.related .comment {
+  width: 480px;
+  height: 343px;
+  float: right;
+}
+.related .comment h4 {
+  border-bottom: 1px solid #999;
+}
+.related .comment ul {
+  height: 505px;
+}
+.related .comment ul li {
+  height: 100px;
+  width: 480px;
+  position: relative;
+  border-bottom: 1px solid #020a4e;
+}
+.related .comment ul li div {
+  width: 180px;
+  height: 60px;
+}
+.related .comment ul li div img {
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+.related .comment ul li span {
+  position: absolute;
+  display: block;
+  right: 80px;
+  bottom: 0;
+  margin-top: 10px;
+}
+.related .comment ul li p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.related .comment #contrlpage input {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+}
+.related .comment #contrlpage i {
+  font-size: 38px;
+  vertical-align: bottom;
+}
+.related .comment #contrlpage button {
+  width: 50px;
+  height: 30px;
+}

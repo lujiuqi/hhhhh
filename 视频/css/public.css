@@ -1,0 +1,194 @@
+@charset 'utf-8';
+#top {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #f00;
+}
+#top a {
+  text-decoration: none;
+  color: #666;
+}
+#top .con {
+  position: relative;
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+}
+#top .con .left {
+  width: 220px;
+  height: 47px;
+  float: left;
+  margin-right: 30px;
+}
+#top .con .left img {
+  display: block;
+  margin-top: 10px;
+}
+#top .con .top-center {
+  float: left;
+  width: 630px;
+  height: 48px;
+}
+#top .con .top-center li {
+  width: 90px;
+  height: 30px;
+  float: left;
+  padding-top: 18px;
+  position: relative;
+}
+#top .con .top-center li a {
+  display: block;
+  width: 90px;
+  height: 30px;
+  font: 16px/30px "宋体";
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+#top .con .top-center li::after {
+  content: " ";
+  display: block;
+  background: url(../img/menu_hover.jpg) no-repeat 0 0;
+  width: 90px;
+  height: 30px;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  transform: scale(0.3);
+  opacity: 0;
+}
+#top .con .top-center li:hover::after {
+  transition: all 0.5s;
+  transform: scale(1);
+  opacity: 1;
+}
+#top .con .right {
+  float: right;
+  width: 320px;
+  height: 60px;
+}
+#top .con .right a {
+  float: right;
+  margin: 22px 8px;
+  font-size: 14px;
+}
+#top .con .right #search {
+  width: 0px;
+  height: 20px;
+  float: right;
+  margin-top: 18px;
+  position: relative;
+  border: 1px solid #fff;
+  border-radius: 11px;
+  padding: 0px 10px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+#top .con .right #search #s-in {
+  display: inline-block;
+  width: 0px;
+  height: 20px;
+  margin: auto;
+  border: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: all 0.4s;
+}
+#top .con .right #search #s-btn {
+  position: absolute;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background: url(../img/etk_09.jpg) no-repeat center center;
+  border: none;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+#top .con .menu {
+  position: absolute;
+  width: 230px;
+  height: 523px;
+  top: 61px;
+  background-color: rgba(255, 74, 0, 0.8);
+  z-index: 99;
+  overflow-y: scroll;
+}
+#top .con .menu a {
+  color: #fff;
+}
+#top .con .menu dl {
+  padding-left: 14px;
+  margin-bottom: 17px;
+}
+#top .con .menu dl dt {
+  font-size: 24px;
+}
+#top .con .menu dl dt:hover a {
+  text-decoration: underline;
+}
+#top .con .menu dl dd {
+  line-height: 24px;
+  margin-top: 10px;
+}
+#top .con .menu dl dd a {
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 5px;
+}
+#top .con .menu dl dd a:hover {
+  text-decoration: underline;
+}
+#top .con .menu::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 3px;
+  background-color: #ccc;
+}
+#top .con .menu::-webkit-scrollbar-thumb {
+  width: 3px;
+  border-radius: 3px;
+  background-color: orangered;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 1583px;
+  height: 154px;
+  padding: 34px 0;
+  background-color: #404144;
+}
+.footer .content {
+  width: 444px;
+  height: 84px;
+  margin: 0 auto;
+  line-height: 12px;
+  font-size: 12px;
+}
+.footer .content a {
+  position: relative;
+  display: inline-block;
+  color: #999;
+  padding-right: 10px;
+}
+.footer .content a:hover {
+  color: orange;
+}
+.footer .content a::after {
+  content: '';
+  width: 1px;
+  height: 20px;
+  background: #000;
+  position: absolute;
+  font-size: 12px;
+  right: 3px;
+}
+.footer .content span {
+  display: block;
+  margin-top: 20px;
+}
+.footer .content i {
+  display: block;
+  margin-top: 20px;
+  text-indent: 10px;
+}

@@ -1,0 +1,53 @@
+@charset 'ut-8';
+#regbox {
+  height: 600px;
+  background-color: #bfa;
+  position: relative;
+  margin: 0px  100px 100px 160px ;
+}
+#regbox form {
+  width: 500px;
+  height: 600px;
+  border-right: 3px dashed #333;
+}
+#regbox form input {
+  width: 230px;
+  height: 40px;
+}
+#regbox form button {
+  display: block;
+  width: 250px;
+  height: 40px;
+  margin-left: 70px;
+  background-color: #bfd;
+}
+#regbox form i {
+  display: inline-block;
+  margin-left: 3px;
+  width: 55px;
+  height: 45px;
+  cursor: pointer;
+  font: 28px/45px '宋体';
+  color: #fff;
+  vertical-align: middle;
+  background-color: #440303;
+}
+#regbox form span {
+  font-size: 18px;
+  font-weight: bolder;
+}
+#regbox P {
+  position: absolute;
+  left: 350px;
+  bottom: 130px;
+  font-size: 18px;
+}
+#regbox .introduce {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #bfa;
+  font-size: 18px;
+  top: 200px;
+  right: 400px;
+}

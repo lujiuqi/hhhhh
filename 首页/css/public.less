@@ -1,0 +1,217 @@
+@charset 'utf-8';
+#top{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #f00;
+    // 中间部分
+    a{
+        text-decoration: none;
+        color: #666;
+    }
+    .con{
+        position: relative;
+        width: 1200px;
+        height: 60px;
+        // background-color: #bfa;
+        margin: 0 auto;
+        // 左边的logo
+        .left{
+            width: 220px;
+            height: 47px;
+            // background-color: #0f0;
+            float: left;
+            margin-right: 30px;
+            img{
+                display: block;
+                margin-top: 10px;
+            }
+        }
+        // 中间导航
+        .top-center{
+            float: left;
+            width: 630px;
+            height: 48px;
+            // background-color: #0ffd;
+            li{
+                width: 90px;
+                height: 30px;
+                float: left;
+                padding-top: 18px;
+                position: relative;
+                a{
+                    display: block;
+                    width: 90px;
+                    height: 30px;
+                    font: 16px/30px "宋体";
+                    text-align: center;
+                    position: relative;
+                    z-index: 3;  
+                }
+              
+                &::after{
+                    content: " ";
+                    display: block;
+                    background:url(../img/menu_hover.jpg) no-repeat 0 0;
+                    width: 90px;
+                    height: 30px;
+                    background-size: 100% 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 15px;
+                    transform: scale(0.3);
+                    opacity:0;
+                }
+                &:hover::after{
+                    transition: all .5s;
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+
+        }
+        // 右边
+        .right{
+            float: right;
+            width: 320px;
+            height: 60px;
+            // background-color: #0dda;
+            a{
+                float: right;
+                margin: 22px 8px;
+                font-size: 14px;
+            }
+            #search{
+                width: 0px;
+                height:20px;
+                float: right;
+                margin-top:18px;
+                position: relative;
+                border: 1px solid #fff;
+                border-radius: 11px;
+                padding:0px 10px;
+                overflow: hidden;
+                transition: all .4s;
+                #s-in{
+                    display: inline-block;
+                    width:0px;
+                    height: 20px;
+                    margin: auto;
+                    border:none;
+                    box-sizing: border-box;
+                    font-size: 14px;
+                    transition: all .4s;
+                }
+                #s-btn{
+                    position: absolute;
+                    vertical-align: middle;
+                    width:20px;
+                    height: 20px;
+                    // margin: 4px 3px 0 0;
+                    // background-color: #f00;
+                    background:url(../img/etk_09.jpg) no-repeat center center;
+                    border:none;
+                    top: 0px;
+                    right:0px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .menu{
+            position: absolute;
+            width: 230px;
+            height: 523px;
+            top: 61px;
+            background-color: rgba(255,74,0,.8);
+            z-index: 99;
+            overflow-y: scroll;
+            a{
+                color: #fff;
+            }
+            dl{
+                padding-left: 14px;
+                margin-bottom: 17px;
+                dt{
+                    font-size: 24px;
+                    &:hover a{
+                        text-decoration: underline;
+                        
+                    }
+                }
+                dd{
+                    line-height: 24px;
+                    margin-top: 10px;
+                    a{
+                     font-size: 14px;
+                     display: inline-block;
+                     margin-right: 5px;
+                     &:hover {
+                     text-decoration: underline;
+                      }
+                    }
+                   
+                        
+                    
+                 }
+            }
+            
+            &::-webkit-scrollbar{
+                width: 3px;
+                border-radius: 3px;
+                background-color: #ccc;
+            }
+            &::-webkit-scrollbar-thumb{
+                width: 3px;
+                border-radius: 3px;
+                background-color: orangered;
+
+            }
+            
+           
+
+        }
+    }
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 1583px;
+    height: 154px;
+    padding: 34px 0;;
+    background-color: #404144;
+    .content{
+        width: 444px;
+        height: 84px;
+        margin:0 auto;
+        line-height: 12px;
+        font-size: 12px;
+        a{
+            position: relative;
+            display: inline-block;
+            color: #999;
+            padding-right: 10px;
+            &:hover{
+                color: orange;
+            }
+            &::after{
+                content: '';
+                width: 1px;
+                height: 20px;
+                background: #000;
+                position: absolute;
+                font-size: 12px;
+                // padding-right: 10px;
+                // top: 5px;
+                right: 3px;
+            }
+        }
+        span{
+            display: block;
+            margin-top: 20px;
+        }
+        i{
+            display: block;
+            margin-top: 20px;
+            text-indent: 10px;
+        }
+    }
+}
